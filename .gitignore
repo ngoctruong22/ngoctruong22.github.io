@@ -1,0 +1,144 @@
+# MkDocs Site Generator
+site/                     # Built documentation site
+.cache/                   # MkDocs cache directory
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+virtualenv/
+.venv/
+
+# Python.Dotenv
+.env
+.env.local
+.env.*.local
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows specific
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Restart Manager Folder
+RMDIR /S /Q %TEMP%\RMDIR
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# MkDocs Plugins
+# Remove if you use specific plugins
+# .plugin_cache/
+
+# MkDocs Material theme (if used)
+# theme/material/.cache/
+
+# Local mkdocs.yml overrides
+mkdocs.override.yml
+
+# Local development server files
+.mkdocs-livereload/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.mypy_cache/
+.python-version
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# MkDocs specific ignore patterns
+# Documentation drafts (if you store them separately)
+drafts/
+
+# Auto-generated navigation
+nav.md
+
+# Local search index (if using search plugin)
+search_index/
+
+# PDF exports (if using PDF export plugin)
+*.pdf
+
+# Custom themes
+custom_theme/
+
+# Backup files
+*.bak
+*.backup
+*_backup
+
+# Logs
+logs/
+*.log
+
+# Project-specific ignores
+# Add any project-specific files/directories here
+# Example: my_custom_output/
+
+# MkDocs build output variations (some users might have different output dirs)
+docsite/
+public/
+output/
+
+# Temporary files created during build
+_tmp/
+_temp/
