@@ -1,2 +1,35 @@
 site_name: NgocTruong's Blog
 site_description: A blog about programming, technology, and software development.
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - About Me: about.md
+  - Laboratory Works:
+      - Lab 1: labs/lab1.md
+      - Lab 2: labs/lab2.md
+      - Lab 3: labs/lab3.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - codehilite
+  - pymdownx.superfences
+  - pymdownx.details
+
+plugins:
+  - search
