@@ -1,41 +1,92 @@
-# Lab X: [Title of the Lab]
+---
+title: Lab 2
+description: Laboratory Work 2
+---
 
-## 1. Objective
+# Laboratory Work 2
 
-Clearly describe the purpose of this laboratory exercise.
-
-- What concepts are being learned?
-- What skills are being practiced?
-- What is the expected outcome?
+!!! info "Lab Info"
+    | | |
+    |---|---|
+    | 🗓️ **Date**   | 07/03/2026|
+    | 👨‍💻 **Author** | Chu Ngoc Truong |
+    | 🐙 **GitHub** | [View source code](https://github.com/ngoctruong22/ngoctruong22.github.io/tree/main/numpy_lab) |
 
 ---
 
-## 2. Task Description
-
-Provide a detailed description of the assignment.
-
-- Background information
-- Requirements
-- Constraints
-- Input / Output specifications (if applicable)
+## 🎯 Objective
+Цель лабораторной работы — изучить библиотеку NumPy для численных вычислений и анализа данных.  
+Я должен научиться работать с массивами, выполнять векторные и матричные операции, делать простой статистический анализ и строить графики.
 
 ---
 
-## 3. Implementation
+## 📋 Task Description
 
-Explain how you approached the task.
+<!-- Mô tả đề bài / yêu cầu của lab -->
+В этой лабораторной работе нужно реализовать несколько функций с использованием библиотеки NumPy.  
 
-### 3.1 Design Approach
-- Architecture or workflow
-- Tools and technologies used
-- Key decisions made
+Основные задачи:
 
-### 3.2 Steps Taken
-1. Step one
-2. Step two
-3. Step three
+- создать и изменять массивы NumPy  
+- выполнять векторные операции (сложение, умножение, скалярное произведение)  
+- выполнять матричные операции (умножение матриц, определитель, обратная матрица)  
+- решить систему линейных уравнений  
+- загрузить данные из CSV файла  
+- выполнить простой статистический анализ данных  
+- нормализовать данные  
+- построить графики с помощью matplotlib и seaborn  
 
-You may include diagrams or screenshots if needed:
+Все функции должны проходить автоматические тесты с использованием `pytest`.
 
-```markdown
-![Screenshot Description](../assets/labX-screenshot.png)
+---
+
+## 💡 Solution
+
+<!-- Trình bày hướng giải quyết, thuật toán, hoặc cách tiếp cận -->
+Я доработал функции, описанные в файле руководства, используя имеющиеся данные, и протестировал их с помощью pytest.
+Примечание: Вам необходимо создать виртуальную среду и загрузить необходимые библиотеки.
+1. Создайте виртуальное окружение:
+  python -m venv numpy_env
+   
+2. Активируйте виртуальное окружение:
+  - Windows: numpy_env\Scripts\activate
+  - Linux/Mac: source numpy_env/bin/activate
+   
+3. Установите зависимости:
+  pip install numpy matplotlib seaborn pandas pytest
+
+---
+
+## 💻 Code
+
+numpy_lab/
+├── main.py
+├── test.py
+├── data/
+│   └── students_scores.csv
+└── plots/
+
+Подробности кода можно посмотреть здесь: [View code](https://github.com/ngoctruong22/ngoctruong22.github.io/tree/main/numpy_lab)
+---
+
+## 📊 Results
+
+<!-- Kết quả chạy chương trình, ảnh chụp màn hình, hoặc output -->
+![alt text](image.png)
+---
+
+## 📝 Conclusion
+
+<!-- Nhận xét, rút ra bài học sau khi hoàn thành lab -->
+Я узнал:
+1. СОЗДАНИЕ И ОБРАБОТКА МАССИВОВ
+2. ВЕКТОРНЫЕ ОПЕРАЦИИ
+3. МАТРИЧНЫЕ ОПЕРАЦИИ
+4. СТАТИСТИЧЕСКИЙ АНАЛИЗ
+5. ВИЗУАЛИЗАЦИЯ
+---
+
+<div style="display: flex; justify-content: space-between; margin-top: 2rem;" markdown>
+[← Back to Lab 1](lab1.md){ .md-button }
+[Lab 3 →](lab3.md){ .md-button .md-button--primary }
+</div>
