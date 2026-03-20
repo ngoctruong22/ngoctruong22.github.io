@@ -60,7 +60,9 @@ description: Laboratory Work 2
 ## 💻 Code
 
 ![alt text](image-1.png)
+
 Подробности кода можно посмотреть здесь: [View code](https://github.com/ngoctruong22/ngoctruong22.github.io/tree/main/numpy_lab)
+
 ---
 
 ## 📊 Results
@@ -74,11 +76,11 @@ description: Laboratory Work 2
 <!-- Nhận xét, rút ra bài học sau khi hoàn thành lab -->
 + Я узнал:
 
-+  1. СОЗДАНИЕ И ОБРАБОТКА МАССИВОВ
-+  2. ВЕКТОРНЫЕ ОПЕРАЦИИ
-+  3. МАТРИЧНЫЕ ОПЕРАЦИИ
-+  4. СТАТИСТИЧЕСКИЙ АНАЛИЗ
-+  5. ВИЗУАЛИЗАЦИЯ
+1. создание и обработка массивов
+2. векторные операции
+3. матричные операции
+4. статистический анализ
+5. визуализация
 ---
 
 <div style="display: flex; justify-content: space-between; margin-top: 2rem;" markdown>
