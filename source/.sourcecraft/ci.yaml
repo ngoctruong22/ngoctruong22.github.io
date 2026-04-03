@@ -1,0 +1,19 @@
+on:
+  push:
+    - workflows: build-site
+      filter:
+        branches: ["main"]
+
+workflows:
+  build-site:
+    tasks:
+      - name: build
+        cubes:
+          - name: build-mkdocs
+            image: docker.io/library/python:3.11
+            script:
+              - pip install mkdocs mkdocs-material mkdocs-minify-plugin pymdown-extensions
+              - mkdocs build
+            artifacts:
+              paths:
+                - site/
