@@ -1,5 +1,5 @@
 # MkDocs Site Generator
-site/                     # Built documentation site
+# site/                     # Built documentation site
 .cache/                   # MkDocs cache directory
 
 # Python

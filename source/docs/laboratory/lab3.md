@@ -23,67 +23,68 @@ description: Laboratory Work 3
 ## 📋 Task Description
 
 <!-- Mô tả đề bài / yêu cầu của lab -->
-В этой лабораторной работе нужно реализовать несколько функций с использованием библиотеки NumPy.  
+CI/CD для статического сайта в SourceCraft (P3123)  
 
 Основные задачи:
+- Реализовать сценарий автоматического развёртывания статического сайта на MkDocs с использованием платформы SourceCraft
+- Реализовать сценарий автоматического развёртывания того же сайта с помощью GitHub Actions
+- В рамках одного локального репозитория добавить 2 удалённых репозитория (SourceCraft и GitHub)
 
-- создать и изменять массивы NumPy  
-- выполнять векторные операции (сложение, умножение, скалярное произведение)  
-- выполнять матричные операции (умножение матриц, определитель, обратная матрица)  
-- решить систему линейных уравнений  
-- загрузить данные из CSV файла  
-- выполнить простой статистический анализ данных  
-- нормализовать данные  
-- построить графики с помощью matplotlib и seaborn  
-
-Все функции должны проходить автоматические тесты с использованием `pytest`.
 
 ---
 
 ## 💡 Solution
 
 <!-- Trình bày hướng giải quyết, thuật toán, hoặc cách tiếp cận -->
-Я доработал функции, описанные в файле руководства, используя имеющиеся данные, и протестировал их с помощью pytest.
-Примечание: Вам необходимо создать виртуальную среду и загрузить необходимые библиотеки.
-1. Создайте виртуальное окружение:
-  python -m venv numpy_env
-   
-2. Активируйте виртуальное окружение:
-  - Windows: numpy_env\Scripts\activate
-  - Linux/Mac: source numpy_env/bin/activate
-   
-3. Установите зависимости:
-  pip install numpy matplotlib seaborn pandas pytest
+Для выполнения задания был использован существующий проект MkDocs.
+
+**SourceCraft:**
+1. Создана публичная организация в SourceCraft
+2. Создан репозиторий из шаблона `sites-landing`
+3. Создан персональный токен доступа (PAT) с правами Maintainer
+4. Файлы Node.js заменены на конфигурацию MkDocs
+5. Настроен файл `.sourcecraft/ci.yaml` для автоматической сборки и публикации
+
+**GitHub Actions:**
+1. Создан репозиторий на GitHub
+2. Настроен файл `.github/workflows/deploy.yml`
+3. В настройках репозитория активирован хостинг из ветки `gh-pages`
+
+**Оба удалённых репозитория добавлены в один локальный:**
 
 ---
 
 ## 💻 Code
 
-![alt text](image-1.png)
-
-Подробности кода можно посмотреть здесь: [View code](https://github.com/ngoctruong22/ngoctruong22.github.io/tree/main/numpy_lab)
+Репозиторий SourceCraft: https://sourcecraft.dev/ngoctruong22/portfolio22
+Репозиторий GitHub: https://github.com/ngoctruong22/ngoctruong_22.github.io
 
 ---
 
 ## 📊 Results
 
 <!-- Kết quả chạy chương trình, ảnh chụp màn hình, hoặc output -->
-![alt text](image.png)
----
+Сайт на SourceCraft: https://ngoctruong22.sourcecraft.site/portfolio22
+
+Репозиторий SourceCraft: https://sourcecraft.dev/ngoctruong22/portfolio22
+
+Сайт на GitHub Pages: https://ngoctruong22.github.io
+
+Репозиторий GitHub: https://github.com/ngoctruong22/ngoctruong_22.github.io
 
 ## 📝 Conclusion
 
 <!-- Nhận xét, rút ra bài học sau khi hoàn thành lab -->
-+ Я узнал:
+Я узнал:
 
-1. создание и обработка массивов
-2. векторные операции
-3. матричные операции
-4. статистический анализ
-5. визуализация
+1. Как настроить CI/CD пайплайн в SourceCraft с использованием файла `.sourcecraft/ci.yaml`
+2. Как автоматически деплоить MkDocs сайт через GitHub Actions
+3. Как добавить два удалённых репозитория в один локальный проект
+4. Разницу между платформами SourceCraft и GitHub в подходе к CI/CD
+5. Как работает автоматическая публикация статического сайта при каждом `git push`
 ---
 
 <div style="display: flex; justify-content: space-between; margin-top: 2rem;" markdown>
-[← Back to Lab 1](lab1.md){ .md-button }
-[Lab 3 →](lab3.md){ .md-button .md-button--primary }
+[← Back to Lab 2](lab2.md){ .md-button }
+[Lab 4 →](lab4.md){ .md-button .md-button--primary }
 </div>
