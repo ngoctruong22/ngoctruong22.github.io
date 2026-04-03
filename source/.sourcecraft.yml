@@ -1,0 +1,28 @@
+on:
+  push:
+    - workflows: deploy-mkdocs
+      filter:
+        branches: ["main"]
+
+workflows:
+  deploy-mkdocs:
+    tasks:
+      - name: build-and-deploy
+        cubes:
+          - name: install-and-build
+            image: docker.io/library/python:3.11
+            script:
+              - pip install mkdocs mkdocs-material mkdocs-minify-plugin pymdown-extensions
+              - mkdocs build
+            artifacts:
+              paths:
+                - site/
+
+          - name: deploy-pages
+            needs: ['install-and-build']
+            image: docker.io/library/python:3.11
+            script:
+              - pip install mkdocs mkdocs-material mkdocs-minify-plugin pymdown-extensions
+              - git config user.name "Sourcecraft CI"
+              - git config user.email "ci@sourcecraft.dev"
+              - mkdocs gh-deploy --force --remote-name origin
