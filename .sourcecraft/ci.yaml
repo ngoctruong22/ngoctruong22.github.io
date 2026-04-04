@@ -14,7 +14,7 @@ workflows:
             script:
               - apt-get update && apt-get install -y git
               - pip install -r requirements.txt
-              - cd source && mkdocs build
+              - mkdocs build -f source/mkdocs.yml -d source/site
               - git config user.email "ci@sourcecraft"
               - git config user.name "CI Bot"
               - cp -r source/site /tmp/site_build
