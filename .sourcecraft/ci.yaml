@@ -3,7 +3,7 @@ on:
     workflows: build-site
     filter:
       branches: main
-
+ 
 workflows:
   build-site:
     tasks:
@@ -12,16 +12,15 @@ workflows:
           - name: build-mkdocs-site
             image: docker.io/library/python:3.13-slim
             script:
-              - python -m pip install --upgrade pip
-              - if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+              - pip install -r requirements.txt
               - mkdocs build -d ./site
               - ls -la ./site
-
+ 
           - name: publish-to-release-branch
             script:
               - git config user.email "ci@sourcecraft"
               - git config user.name "CI Bot"
-              - git checkout -b release || git checkout release
+              - git checkout release || git checkout -b release
               - git add ./site
-              - git commit -m "auto: update site"
+              - git commit -m "auto update site"
               - git push origin release -f
