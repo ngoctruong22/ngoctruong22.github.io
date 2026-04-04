@@ -3,7 +3,7 @@ on:
     workflows: build-site
     filter:
       branches: main
-
+ 
 workflows:
   build-site:
     tasks:
@@ -12,6 +12,7 @@ workflows:
           - name: build-and-deploy
             image: docker.io/library/python:3.13-slim
             script:
+              - apt-get update && apt-get install -y git
               - pip install -r requirements.txt
               - cd source && mkdocs build
               - git config user.email "ci@sourcecraft"
