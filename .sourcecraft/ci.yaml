@@ -13,7 +13,7 @@ workflows:
             image: docker.io/library/python:3.13-slim
             script:
               - pip install -r requirements.txt
-              - mkdocs build -d ./site
+              - mkdocs build -f source/mkdocs.yml -d ./site
               - ls -la ./site
  
           - name: publish-to-release-branch
