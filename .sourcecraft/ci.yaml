@@ -17,7 +17,9 @@ workflows:
               - cd source && mkdocs build
               - git config user.email "ci@sourcecraft"
               - git config user.name "CI Bot"
+              - git stash
               - git checkout release || git checkout -b release
+              - git stash pop
               - git add source/site
               - git commit -m "auto update site" || echo "nothing to commit"
               - git push origin release -f
