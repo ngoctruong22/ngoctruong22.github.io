@@ -13,14 +13,11 @@ workflows:
             image: docker.io/library/python:3.13-slim
             script:
               - python -m pip install --upgrade pip
-              - "if [ -f requirements.txt ]; then pip install -r requirements.txt; fi"
+              - pip install -r requirements.txt
               - mkdocs build -d ./site
-              - echo "Site built"
-              - ls -la ./site
-
           - name: publish-to-release-branch
             script:
               - git checkout -b release
               - git add ./site
-              - "git commit -m \"feat: auto update site\""
-              - "git push origin release -f"
+              - git commit -m "feat: release"
+              - git push origin release -f
