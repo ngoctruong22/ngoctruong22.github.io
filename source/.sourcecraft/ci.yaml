@@ -7,17 +7,19 @@ on:
 workflows:
   build-site:
     tasks:
-      - name: build-and-publish-site
+      - name: build-site
         cubes:
-          - name: build-mkdocs-site
+          - name: install-and-build
             image: docker.io/library/python:3.13-slim
             script:
               - python -m pip install --upgrade pip
               - pip install -r requirements.txt
               - mkdocs build -d ./site
-          - name: publish-to-release-branch
+              - ls -la ./site
+
+          - name: publish-site
             script:
               - git checkout -b release
-              - git add ./site
-              - git commit -m "feat: release"
+              - git add site
+              - "git commit -m 'feat: release'"
               - git push origin release -f
