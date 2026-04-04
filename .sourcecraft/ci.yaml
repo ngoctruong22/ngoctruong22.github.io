@@ -3,24 +3,21 @@ on:
     workflows: build-site
     filter:
       branches: main
- 
 workflows:
   build-site:
     tasks:
-      - name: build-and-publish-site
+      - name: build-site
         cubes:
-          - name: build-mkdocs-site
+          - name: install-and-build
             image: docker.io/library/python:3.13-slim
             script:
-              - pip install -r requirements.txt
-              - mkdocs build -f source/mkdocs.yml -d ./site
-              - ls -la ./site
- 
-          - name: publish-to-release-branch
+              - python -m pip install --upgrade pip
+              - pip install -r source/requirements.txt
+              - mkdocs build -f source/mkdocs.yml -d source/site
+              - ls -la source/site
+          - name: publish-site
             script:
-              - git config user.email "ci@sourcecraft"
-              - git config user.name "CI Bot"
-              - git checkout release || git checkout -b release
-              - git add ./site
-              - git commit -m "auto update site"
+              - git checkout -b release || git checkout release
+              - git add source/site
+              - "git commit -m 'feat: release'"
               - git push origin release -f
