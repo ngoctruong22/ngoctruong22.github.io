@@ -48,9 +48,8 @@ CI/CD для статического сайта в SourceCraft (P3123)
 **GitHub Actions:**
 1. Создан репозиторий на GitHub
 2. Настроен файл `.github/workflows/deploy.yml`
-3. В настройках репозитория GitHub:
-   - Settings → Pages → Source: GitHub Actions
-   - Сайт автоматически деплоится при каждом git push в ветку main
+3. В настройках репозитория активирован хостинг из ветки `gh-pages`
+
 
 **Оба удалённых репозитория добавлены в один локальный:**
 
