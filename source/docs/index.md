@@ -64,6 +64,10 @@ This site is where I document my journey — from personal projects to universit
 | [Lab 1](laboratory/lab1.md) | First laboratory work |
 | [Lab 2](laboratory/lab2.md) | Second laboratory work |
 | [Lab 3](laboratory/lab3.md) | Third laboratory work |
+| [Lab 4](laboratory/lab4.md) | Fourth laboratory work |
+| [Lab 5](laboratory/lab5.md) | Fifth laboratory work |
+| [Lab 6](laboratory/lab6.md) | Sixth laboratory work |
+| [Lab 7](laboratory/lab7.md) | Seventh laboratory work |
 
 ---
 
