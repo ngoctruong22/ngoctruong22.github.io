@@ -10,7 +10,7 @@ description: Laboratory Work 6
     |---|---|
     | 🗓️ **Date**   | 17/04/2026|
     | 👨‍💻 **Author** | Chu Ngoc Truong |
-    | 🐙 **Colab** |  |
+    | 🐙 **Colab** | [Link to SourceCraft](https://sourcecraft.dev/ngoctruong22/portfolio22/browse/lab9/lab_template.ipynb?rev=main) |
 
 ---
 
@@ -58,7 +58,9 @@ yaml
 ## 📊 Results
 
 <!-- Kết quả chạy chương trình, ảnh chụp màn hình, hoặc output -->
+![alt text](image-6.png)
 
+[Link to Sourcecraft](https://sourcecraft.dev/ngoctruong22/portfolio22/browse/lab9/lab_template.ipynb?rev=main)
 
 
 
