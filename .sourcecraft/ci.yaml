@@ -29,17 +29,17 @@ workflows:
               - git push origin release -f
 
 
-  lab9-check:
-    tasks:
-      - name: run-lab9-notebook-and-build-report
-        cubes:
-          - name: execute-lab9-notebook
-            image: docker.io/library/python:3.11
-            script:
-              - pip install jupyter nbconvert pandas numpy matplotlib
-              - jupyter nbconvert --to notebook --execute lab9/lab_template.ipynb --output executed_lab.ipynb
-              - jupyter nbconvert --to html executed_lab.ipynb --output report.html
-            artifacts:
-              paths:
-                - executed_lab.ipynb
-                - report.html
+lab9-check:
+  tasks:
+    - name: run-lab9-notebook-and-build-report
+      cubes:
+        - name: execute-lab9-notebook
+          image: docker.io/library/python:3.11
+          script:
+            - pip install jupyter nbconvert pandas numpy matplotlib
+            - jupyter nbconvert --to notebook --execute lab9/lab_template.ipynb --output executed_lab.ipynb --output-dir=.
+            - jupyter nbconvert --to html executed_lab.ipynb --output report.html
+          artifacts:
+            paths:
+              - executed_lab.ipynb
+              - report.html
