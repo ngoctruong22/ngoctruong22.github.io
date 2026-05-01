@@ -68,6 +68,8 @@ This site is where I document my journey — from personal projects to universit
 | [Lab 5](laboratory/lab5.md) | Fifth laboratory work |
 | [Lab 6](laboratory/lab6.md) | Sixth laboratory work |
 | [Lab 7](laboratory/lab7.md) | Seventh laboratory work |
+| [Lab 8](laboratory/lab8.md) | Eighth laboratory work |
+| [Lab 9](laboratory/lab9.md) | Ninth laboratory work |
 
 ---
 

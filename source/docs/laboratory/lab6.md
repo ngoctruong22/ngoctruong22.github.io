@@ -78,6 +78,6 @@ description: Laboratory Work 6
 ---
 
 <div style="display: flex; justify-content: space-between; margin-top: 2rem;" markdown>
-[← Back to Lab 3](lab3.md){ .md-button }
-[Lab 5 →](lab5.md){ .md-button .md-button--primary }
+[← Back to Lab 5](lab5.md){ .md-button }
+[Lab 7 →](lab7.md){ .md-button .md-button--primary }
 </div>
