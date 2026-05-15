@@ -1,9 +1,9 @@
 ---
-title: Lab 6
-description: Laboratory Work 6
+title: Lab 9
+description: Laboratory Work 9
 ---
 
-# Laboratory Work 6
+# Laboratory Work 9
 
 !!! info "Lab Info"
     | | |
