@@ -58,7 +58,11 @@ description: Laboratory Work 8
 
 <!-- Kết quả chạy chương trình, ảnh chụp màn hình, hoặc output -->
 ![alt text](image-5.png)
-
+| Файл | Описание |
+|---|---|
+| `scraped_news_data.csv` | Основная информация о новостях |
+| `news_content/news_content.csv` | Подробные данные: просмотры, текст, теги |
+[Открыть результаты](https://drive.google.com/drive/folders/1gyf44QyyYS8yMBEyZi3a3J8nFVnKvUso)
 
 ## 📝 Conclusion
 
